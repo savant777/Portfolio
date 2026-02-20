@@ -64,7 +64,7 @@ function App() {
         <div className="container">
             <header>
                 <div className="profile-section">
-                    <img src="/resume-pic.png" alt="Metawee Charoentungsirikul" className="profile-pic" />
+                    <img src="./resume-pic.png" alt="Metawee Charoentungsirikul" className="profile-pic" />
                     <h1>Metawee C.</h1>
                     <p className="subtitle">Full Stack Developer | First-Class Honours</p>
                 </div>
