@@ -76,7 +76,7 @@ function App() {
                 </div>
                 
                 <div className="cta-buttons">
-                    <a href="/resume.pdf" className="btn btn-primary" target="_blank" rel="noreferrer">Download Resume (PDF)</a>
+                    <a href="./Resume_Metawee_Charoentungsirikul.pdf" className="btn btn-primary" target="_blank" rel="noreferrer">Download Resume (PDF)</a>
                 </div>
             </header>
 
