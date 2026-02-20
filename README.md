@@ -1,73 +1,37 @@
-# React + TypeScript + Vite
+# 🌐 Metawee's Portfolio Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio landing page. This project serves as a centralized gateway to my technical works, ranging from Web Development and Desktop Applications to Data Science projects.
 
-Currently, two official plugins are available:
+## ✨ Key Features
+- **Centralized Showcase:** A clean, minimal dark-themed UI to explore all my major projects.
+- **Responsive Design:** Optimized for all devices, ensuring a seamless experience when accessed via QR code on my resume.
+- **Automated CI/CD:** Integrated with **GitHub Actions** for continuous integration and deployment to GitHub Pages.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tech Stack
+- **Frontend:** React.js (Vite)
+- **Styling:** CSS3 (Custom Dark Theme), Google Sans Typography
+- **Automation:** GitHub Actions (CI/CD)
+- **Deployment:** GitHub Pages
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📂 Project Structure
+```bash
+my-projects/
+├── public/          # Assets (Profile pic, Resume PDF)
+├── src/             # Source files
+│   ├── App.jsx      # Main application logic & project data
+│   └── App.css      # Custom styles & animations
+├── .github/         # CI/CD Workflows
+└── vite.config.ts   # Build configurations
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Deployment Process
+This repository is configured with a **Continuous Deployment** pipeline.
+1. Any push to the `main` branch triggers the **Deploy Vite React to GitHub Pages** workflow.
+2. GitHub Actions installs dependencies, builds the project (`npm run build`), and deploys the `dist` folder to the `gh-pages` environment.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 👤 Contact
+- Email: metawee.77@gmail.com
+- LinkedIn: [linkedin.com/in/metawee77](https://www.linkedin.com/in/metawee77/)
+- GitHub: [savant777](https://github.com/savant777)
